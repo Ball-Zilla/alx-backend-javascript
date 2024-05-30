@@ -1,3 +1,8 @@
-export default function getResponseFromAPI() {
-  return new Promise(() => {});
+function getResponseFromAPI() {
+  return Promise.resolve({
+    status: 200,
+    body: 'success',
+  });
 }
+
+export default getResponseFromAPI;
